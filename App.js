@@ -3,6 +3,7 @@ import BasicExample from './components/BasicExample'
 import AnatomyExample from './components/AnatomyExample'
 import HeaderExample from './components/HeaderExample'
 import ContentExample from './components/ContentExample'
+import FooterExample from './components/FooterExample'
 
 export default class App extends Component {
   async componentWillMount() {
@@ -17,7 +18,8 @@ export default class App extends Component {
       // <BasicExample />
       // <AnatomyExample />
       // <HeaderExample />
-      <ContentExample />
+      // <ContentExample />
+      <FooterExample />
     )
   }
 }
