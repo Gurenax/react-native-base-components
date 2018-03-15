@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import BasicExample from './components/BasicExample'
 import AnatomyExample from './components/AnatomyExample'
 import HeaderExample from './components/HeaderExample'
+import ContentExample from './components/ContentExample'
 
 export default class App extends Component {
   async componentWillMount() {
@@ -15,7 +16,8 @@ export default class App extends Component {
     return (
       // <BasicExample />
       // <AnatomyExample />
-      <HeaderExample />
+      // <HeaderExample />
+      <ContentExample />
     )
   }
 }
