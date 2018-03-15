@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import BasicExample from './components/BasicExample'
 import AnatomyExample from './components/AnatomyExample'
+import HeaderExample from './components/HeaderExample'
 
 export default class App extends Component {
   async componentWillMount() {
@@ -13,7 +14,8 @@ export default class App extends Component {
   render() {
     return (
       // <BasicExample />
-      <AnatomyExample />
+      // <AnatomyExample />
+      <HeaderExample />
     )
   }
 }
