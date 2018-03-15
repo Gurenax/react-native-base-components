@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Container, Button, Text } from 'native-base'
+import BasicExample from './components/BasicExample'
+import AnatomyExample from './components/AnatomyExample'
 
 export default class App extends Component {
   async componentWillMount() {
@@ -11,11 +12,8 @@ export default class App extends Component {
 
   render() {
     return (
-      <Container>
-        <Button>
-          <Text>Button</Text>
-        </Button>
-      </Container>
+      // <BasicExample />
+      <AnatomyExample />
     )
   }
 }
