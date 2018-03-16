@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
+
+/* Components */
 import BasicExample from './components/BasicExample'
 import AnatomyExample from './components/AnatomyExample'
 import HeaderExample from './components/HeaderExample'
 import ContentExample from './components/ContentExample'
 import FooterExample from './components/FooterExample'
+import ActionSheetExample from './components/ActionSheetExample'
 
 export default class App extends Component {
   async componentWillMount() {
@@ -19,7 +22,8 @@ export default class App extends Component {
       // <AnatomyExample />
       // <HeaderExample />
       // <ContentExample />
-      <FooterExample />
+      // <FooterExample />
+      <ActionSheetExample />
     )
   }
 }
