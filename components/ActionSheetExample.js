@@ -22,6 +22,8 @@ const AppNavigator = StackNavigator({
 })
 
 export default class ActionSheetExample extends Component {
+  state = {}
+
   render() {
     return (
       <Root>
