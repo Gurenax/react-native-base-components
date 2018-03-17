@@ -9,14 +9,24 @@ import FooterExample from './components/FooterExample'
 import ActionSheetExample from './components/ActionSheetExample'
 
 export default class App extends Component {
+  state = {
+    loading: true
+  }
   async componentWillMount() {
     await Expo.Font.loadAsync({
       Roboto: require('./node_modules/native-base/Fonts/Roboto.ttf'),
       Roboto_medium: require('./node_modules/native-base/Fonts/Roboto_medium.ttf')
     })
+    this.setState({
+      loading: false
+    })
   }
 
   render() {
+    if (this.state.loading) {
+      return <Expo.AppLoading />;
+    }
+    
     return (
       // <BasicExample />
       // <AnatomyExample />

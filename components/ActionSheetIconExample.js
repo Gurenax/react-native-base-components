@@ -1,0 +1,60 @@
+import React, { Component } from 'react'
+
+/* Needed for ActionSheet */
+import { Root } from 'native-base'
+import { StackNavigator } from 'react-navigation'
+
+import {
+  Container,
+  Header,
+  Button,
+  Content,
+  ActionSheet,
+  Text
+} from 'native-base'
+var BUTTONS = [
+  { text: 'Option 0', icon: 'american-football', iconColor: '#2c8ef4' },
+  { text: 'Option 1', icon: 'analytics', iconColor: '#f42ced' },
+  { text: 'Option 2', icon: 'aperture', iconColor: '#ea943b' },
+  { text: 'Delete', icon: 'trash', iconColor: '#fa213b' },
+  { text: 'Cancel', icon: 'close', iconColor: '#25de5b' }
+]
+var DESTRUCTIVE_INDEX = 3
+var CANCEL_INDEX = 4
+
+const AppNavigator = StackNavigator({
+  Page: { screen: Container }
+})
+
+export default class ActionSheetIconExample extends Component {
+  state = {}
+
+  render() {
+    return (
+      <Root>
+        <Container>
+          <Header />
+          <Content padder>
+            <Button
+              onPress={() =>
+                ActionSheet.show(
+                  {
+                    options: BUTTONS,
+                    cancelButtonIndex: CANCEL_INDEX,
+                    destructiveButtonIndex: DESTRUCTIVE_INDEX,
+                    title: 'Testing ActionSheet'
+                  },
+                  buttonIndex => {
+                    this.setState({ clicked: BUTTONS[buttonIndex] })
+                  }
+                )
+              }
+            >
+              <Text>Actionsheet</Text>
+            </Button>
+          </Content>
+        </Container>
+      </Root>
+    )
+  }
+}
