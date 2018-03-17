@@ -7,6 +7,7 @@ import HeaderExample from './components/HeaderExample'
 import ContentExample from './components/ContentExample'
 import FooterExample from './components/FooterExample'
 import ActionSheetExample from './components/ActionSheetExample'
+import ActionSheetIconExample from './components/ActionSheetIconExample'
 
 export default class App extends Component {
   state = {
@@ -33,7 +34,8 @@ export default class App extends Component {
       // <HeaderExample />
       // <ContentExample />
       // <FooterExample />
-      <ActionSheetExample />
+      // <ActionSheetExample />
+      <ActionSheetIconExample />
     )
   }
 }
