@@ -9,6 +9,7 @@ import FooterExample from './components/FooterExample'
 import ActionSheetExample from './components/ActionSheetExample'
 import ActionSheetIconExample from './components/ActionSheetIconExample'
 import BadgeExample from './components/BadgeExample'
+import ButtonExample from './components/ButtonExample'
 
 export default class App extends Component {
   state = {
@@ -37,7 +38,8 @@ export default class App extends Component {
       // <FooterExample />
       // <ActionSheetExample />
       // <ActionSheetIconExample />
-      <BadgeExample />
+      // <BadgeExample />
+      <ButtonExample />
     )
   }
 }
