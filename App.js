@@ -10,6 +10,7 @@ import ActionSheetExample from './components/ActionSheetExample'
 import ActionSheetIconExample from './components/ActionSheetIconExample'
 import BadgeExample from './components/BadgeExample'
 import ButtonExample from './components/ButtonExample'
+import CardExample from './components/CardExample';
 
 export default class App extends Component {
   state = {
@@ -39,7 +40,8 @@ export default class App extends Component {
       // <ActionSheetExample />
       // <ActionSheetIconExample />
       // <BadgeExample />
-      <ButtonExample />
+      // <ButtonExample />
+      <CardExample />
     )
   }
 }
